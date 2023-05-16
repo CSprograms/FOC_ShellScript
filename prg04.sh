@@ -1,28 +1,14 @@
+#Generation of Fibonacci series 0, 1, 1, 2, 3, 5, 8, …..n
 #!/bin/bash
-
-# Get the value of n from user input
 read -p "Enter the value of n: " n
-
-# Initialize variables for the first two Fibonacci numbers
-a=0
-b=1
-
-# Print the first two Fibonacci numbers
-echo -n "$a $b "
-
-# Loop through and print the remaining Fibonacci numbers up to n
-while [[ $b -lt $n ]]
+f1=0
+f2=1
+i=0
+while [[ $i -lt $n ]]
 do
-    # Calculate the next Fibonacci number
-    c=$((a + b))
-    
-    # Print the next Fibonacci number
-    echo -n "$c "
-
-    # Update the values of a and b for the next iteration
-    a=$b
-    b=$c
+    echo "$f1 "
+    f3=$((f1 + f2))
+    f1=$((f2))
+    f2=$((f3))
+    ((i++))
 done
-
-# Print a newline character at the end of the output
-echo ""
