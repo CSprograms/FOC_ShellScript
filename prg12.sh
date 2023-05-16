@@ -1,3 +1,4 @@
+#Summing up squares of Odd numbers
 #!/bin/bash
 
 # Check if argument is provided
