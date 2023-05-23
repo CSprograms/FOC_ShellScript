@@ -1,4 +1,4 @@
-#1. Generation of number series 1, 2, 3, 4,…..n
+#Generation of number series 1, 2, 3, 4,…..n
 #!/bin/bash
 
 read -p "Enter the value of n: " n
