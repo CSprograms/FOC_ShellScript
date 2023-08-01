@@ -1,7 +1,8 @@
 #Summing up 1^1 + 2^2 + 3^3 + 4^4 + ... + n^n
 #!/bin/bash
 
-if [ $# -eq 0 ]; then
+if [ $# -eq 0 ]
+then
   echo "Please provide a number n as argument."
   exit 1
 fi
