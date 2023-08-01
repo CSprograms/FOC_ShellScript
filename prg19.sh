@@ -19,5 +19,4 @@ read -p "Enter an integer number: " input_number
 
 reversed_number=$(reverse_digits "$input_number")
 
-# Output the reversed number
 echo "Reversed number: $reversed_number"
